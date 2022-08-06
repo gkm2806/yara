@@ -8,7 +8,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">YARA</h3>
 
   <p align="center">
     A simple monorepo for react projects
