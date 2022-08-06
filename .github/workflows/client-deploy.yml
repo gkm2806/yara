@@ -1,0 +1,42 @@
+name: CLIENT_DEPLOY(GCP)
+on:
+  push:
+    branches: [ master ]
+    paths:
+      - 'packages/client/**/*'
+  workflow_dispatch:
+jobs:
+  build:
+    name: Sync packages and builds Client packages
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./packages/client
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: node setup
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Fetch packages
+        run: yarn
+
+      - name: 'build client package'
+        id: 'build'
+        run: yarn build
+
+      - id: 'gcp-auth'
+        uses: 'google-github-actions/setup-gcloud@v0.2.0'
+        with:
+          service_account_key: ${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}
+          project_id: ${{ secrets.CGP_PROJECT_ID }}
+
+      - name: 'Erase bucket content'
+        id: 'gcp-clean-bucket'
+        run: gsutil -m rm -r ${{ secrets.GCP_DEPLOY_BUCKET }}
+
+      - name: 'upload build to bucket'
+        id: 'gcp-upload-file'
+        run: gsutil cp ./dist/* g${{ secrets.GCP_DEPLOY_BUCKET }}
