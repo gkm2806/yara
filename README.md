@@ -45,6 +45,7 @@
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
+    <li><a href="#jaba">JABAA</a></li>
   </ol>
 </details>
 
@@ -108,3 +109,10 @@ I *feel like* it is MIT, but I honestly have no idea
 
 ## contact
 `@gkm2806` on linkedin if you are fancy, but I probably will answer faster here (forks, issues created) or on Instagram
+
+<!--
+## Jaba 
+HI THERE
+I learned a lot of this stuff doing my personal goals on my current job @rdstation, 
+AGORA SE TU É BR e ta afim de novos desafios, dá uma olhada nas vagas abertas aki ヾ(⌐■_■)ノ♪ https://boards.greenhouse.io/rdstation ～(￣▽￣～) e se precisar de ajuda só mandar um salve!
+-->
