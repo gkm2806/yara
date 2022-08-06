@@ -1,7 +1,7 @@
 name: CLIENT_TESTS
 on:
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
     paths:
       - 'packages/client/**/*'
   workflow_dispatch:
