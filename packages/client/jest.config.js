@@ -1,7 +1,7 @@
 /** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
 const { name } = require('./package.json')
-const { jestConfigBuilder } = require('@yara/react-jest')
+const { buildJestConfig } = require('@yara/react-jest')
 
 module.exports = {
-  ...jestConfigBuilder(name)
+  ...buildJestConfig(name)
 }
