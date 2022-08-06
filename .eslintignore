@@ -1,0 +1,7 @@
+.eslintrc.js
+prettier.config.js
+dist
+packages/**/*.js
+packages/**/dist
+node_modules
+tsconfig.json

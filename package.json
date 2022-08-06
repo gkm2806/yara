@@ -13,6 +13,7 @@
   "author": "kukiel <gabrielkukiel@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "typescript": "^4.6.3"
+    "typescript": "^4.6.3",
+    "@yara/lint": "*"
   }
 }
