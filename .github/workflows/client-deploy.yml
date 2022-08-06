@@ -1,7 +1,7 @@
 name: CLIENT_DEPLOY(GCP)
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
     paths:
       - 'packages/client/**/*'
   workflow_dispatch:
