@@ -1,0 +1,18 @@
+{
+  "name": "@yara/react-jest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "8.16.1",
+    "@testing-library/jest-dom": "5.16.5",
+    "@testing-library/react": "^12.0.4",
+    "global-jsdom": "^8.5.0",
+    "jsdom": "^20.0.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

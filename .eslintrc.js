@@ -1,3 +1,3 @@
-const config = require('@shaolinjs/lint')
+const config = require('@yara/lint')
 
 module.exports = config
